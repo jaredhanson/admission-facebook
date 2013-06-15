@@ -15,6 +15,10 @@ function(OAuth2Provider, ajax, clazz) {
    *         responseType: 'token'
    *       }));
    *
+   * References:
+   *  - [The Login Flow for Web (without JavaScript SDK)](https://developers.facebook.com/docs/facebook-login/login-flow-for-web-no-jssdk/)
+   *  - [Access Tokens](https://developers.facebook.com/docs/facebook-login/access-tokens/)
+   *
    * @param {Object} opts
    * @api public
    */
@@ -32,10 +36,6 @@ function(OAuth2Provider, ajax, clazz) {
   
   /**
    * Retrieve info for `token`.
-   *
-   * References:
-   *  - [The Login Flow for Web (without JavaScript SDK)](https://developers.facebook.com/docs/facebook-login/login-flow-for-web-no-jssdk/)
-   *  - [Access Tokens](https://developers.facebook.com/docs/facebook-login/access-tokens/)
    *
    * @param {String} token
    * @param {Function} cb
